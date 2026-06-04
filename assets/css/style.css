@@ -255,6 +255,17 @@ a:hover { text-decoration: underline; }
 .entry .meta { font-size: .82rem; color: var(--text-dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .entry-sub { margin: .15rem 0 0; color: var(--text-soft); font-style: italic; font-size: .92rem; }
 
+/* inline external link (e.g. program / institution site) */
+.ext-link {
+  font-style: normal; font-weight: 600; font-size: .82rem;
+  color: var(--accent); white-space: nowrap; margin-left: .45rem;
+}
+.ext-link::before {
+  content: "·"; color: var(--text-dim); font-weight: 400; margin-right: .45rem;
+}
+.ext-link::after { content: "↗"; font-size: .9em; margin-left: .15rem; }
+.ext-link:hover { text-decoration: underline; }
+
 .pill {
   display: inline-block; font-size: .68rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .5px;
