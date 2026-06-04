@@ -281,6 +281,27 @@ a:hover { text-decoration: underline; }
 .award-desc { display: block; font-size: .87rem; color: var(--text-dim); margin-top: .1rem; }
 .award-list .meta { font-size: .82rem; color: var(--text-dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
+/* Awards — trophy marker (scoped to #awards only) */
+#awards .award-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: .95rem;
+  align-items: start;
+  padding: .85rem .7rem;
+  border-bottom: 1px solid var(--border);
+  border-radius: 8px;
+  transition: background .15s;
+}
+#awards .award-list li:hover { background: var(--accent-soft); }
+#awards .award-list li::before {
+  content: "";
+  width: 18px; height: 18px; margin-top: .18rem; opacity: .85;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2EwOGE1ZSI+PHBhdGggZD0iTTcgNFYyaDEwdjJoNHY0YTQgNCAwIDAgMS00IDQgNiA2IDAgMCAxLTMgMi44M1YxOGgzdjJIOHYtMmgzdi0zLjE3QTYgNiAwIDAgMSA4IDEyIDQgNCAwIDAgMSA0IDhWNGgzWm0wIDJINnYyYTIgMiAwIDAgMCAxIDEuNzNWNlptMTAgMHYzLjczQTIgMiAwIDAgMCAxOCA4VjZoLTFaIi8+PC9zdmc+") center/contain no-repeat;
+}
+[data-theme="dark"] #awards .award-list li::before {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2I4YTM3NCI+PHBhdGggZD0iTTcgNFYyaDEwdjJoNHY0YTQgNCAwIDAgMS00IDQgNiA2IDAgMCAxLTMgMi44M1YxOGgzdjJIOHYtMmgzdi0zLjE3QTYgNiAwIDAgMSA4IDEyIDQgNCAwIDAgMSA0IDhWNGgzWm0wIDJINnYyYTIgMiAwIDAgMCAxIDEuNzNWNlptMTAgMHYzLjczQTIgMiAwIDAgMCAxOCA4VjZoLTFaIi8+PC9zdmc+");
+}
+
 /* ============================================================
    Cards / two column
    ============================================================ */
@@ -421,6 +442,9 @@ a:hover { text-decoration: underline; }
   .entry-head { gap: .2rem; }
   .award-list li { flex-direction: column; gap: .15rem; }
   .award-list .meta { order: -1; }
+  /* #awards uses a grid (trophy marker) — keep title + date in the text column */
+  #awards .award-list li { grid-template-columns: auto 1fr; row-gap: .15rem; }
+  #awards .award-list .meta { order: 0; grid-column: 2; color: var(--text-dim); }
 }
 
 @media (prefers-reduced-motion: reduce) {
