@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đorđe Klisura — Assistant Professor of IS &amp; Security</title>
+  <meta name="description" content="Đorđe Klisura — Assistant Professor of Information Systems and Security. Research in Trustworthy AI, permission-aware language models, and AI-driven cybersecurity." />
+  <meta name="author" content="Đorđe Klisura" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Đorđe Klisura — Assistant Professor of IS &amp; Security" />
+  <meta property="og:description" content="Research in Trustworthy AI, permission-aware language models, and AI-driven cybersecurity." />
+
+  <!-- Favicon (emoji-based, no asset needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <button id="navToggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <div class="profile">
+          <img class="avatar" src="picture/profile_photo.jpg" alt="Đorđe Klisura" width="92" height="92" />
+          <h1 class="name">Đorđe Klisura</h1>
+          <p class="role">Assistant Professor of<br />Information Systems &amp; Security</p>
+          <div class="affil-row">
+            <img class="affil-logo" src="picture/Kennesaw_State_Owls_logo.svg.png" alt="Kennesaw State University" width="38" height="38" />
+            <p class="affil">Kennesaw State University<br /><span>Coles College of Business</span></p>
+          </div>
+        </div>
+
+        <ul class="contacts">
+          <li>
+            <a href="mailto:dklisura@kennesaw.edu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2v.2l9 5.4 9-5.4V7H3Zm18 2.5-8.5 5.1a1 1 0 0 1-1 0L3 9.5V17h18V9.5Z"/></svg>
+              <span>dklisura@kennesaw.edu</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=jpv8YdQAAAAJ&hl=en" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm0 13.2L4.8 12.3 12 8.4l7.2 3.9L12 16.2ZM6 14.6v3.1c0 1.7 2.7 3.3 6 3.3s6-1.6 6-3.3v-3.1l-6 3.3-6-3.3Z"/></svg>
+              <span>Google Scholar</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/klisura-code" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/djordje-klisura/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 22 10.6 22 14v7h-4v-6.2c0-1.5-.03-3.4-2.07-3.4-2.07 0-2.39 1.6-2.39 3.3V21H9V9Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+
+        <nav class="site-nav" aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#research">Research Interests</a>
+          <a href="#publications">Publications</a>
+          <a href="#preprints">Preprints</a>
+          <a href="#education">Education</a>
+          <a href="#appointments">Appointments</a>
+          <a href="#awards">Awards &amp; Honors</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#presentations">Presentations</a>
+          <a href="#service">Service</a>
+          <a href="#grants">Grants &amp; Scholarships</a>
+          <a href="#development">Professional Development</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Industry Experience</a>
+          <a href="#memberships">Memberships</a>
+        </nav>
+
+        <div class="sidebar-foot">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-15a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 16a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V20a1 1 0 0 1 1-1ZM4 11h1.5a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2Zm14.5 0H20a1 1 0 1 1 0 2h-1.5a1 1 0 1 1 0-2ZM5.6 4.2 6.7 5.3a1 1 0 0 1-1.4 1.4L4.2 5.6a1 1 0 0 1 1.4-1.4Zm12.7 12.7 1.1 1.1a1 1 0 0 1-1.4 1.4l-1.1-1.1a1 1 0 0 1 1.4-1.4ZM18.4 4.2a1 1 0 0 1 1.4 1.4l-1.1 1.1a1 1 0 0 1-1.4-1.4l1.1-1.1ZM5.7 16.9a1 1 0 0 1 1.4 1.4L6 19.4a1 1 0 0 1-1.4-1.4l1.1-1.1Z"/></svg>
+            <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+            <span class="theme-label">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <main class="content" id="main">
+
+      <section id="about" class="section">
+        <p class="lede">
+          I am an incoming <strong>Assistant Professor of Information Systems and Security</strong>
+          (tenure-track) at <strong>Kennesaw State University</strong>, Coles College of Business.
+          I completed my Ph.D. in Information Technology with a focus on cybersecurity at the
+          University of Texas at San Antonio, advised by Dr. Anthony Rios. My research builds
+          trustworthy AI—language models that reason about permissions and access control,
+          resist privacy attacks, and behave fairly across dialects and populations.
+        </p>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research Interests</h2>
+        <div class="tags">
+          <span class="tag">Natural Language Processing</span>
+          <span class="tag">Trustworthy AI</span>
+          <span class="tag">Cyber Security</span>
+          <span class="tag">Data Analytics</span>
+        </div>
+      </section>
+
+      <!-- ============ PUBLICATIONS ============ -->
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <p class="muted-note">Author name in <strong>bold</strong>. Venue metrics shown where applicable.</p>
+
+        <h3 class="sub">Journal Articles</h3>
+        <ol class="pub-list">
+          <li>
+            I. Kuukkanen, G. Muluh, <strong>Đorđe Klisura</strong>, E. Kortela, A. Pietikäinen, L. Lahti, J. Hytönen, and M. Karonen.
+            “Application of Mass Spectrometry-Based Metabolomics and Machine Learning in the Diagnostics of Lyme Neuroborreliosis.”
+            <em>ACS Omega</em> (2026).
+          </li>
+          <li>
+            S. Torabi, <strong>Đorđe Klisura</strong>, J. Khoury, E. Bou-Harb, C. Assi, and M. Debbabi.
+            “Internet-Wide Analysis, Characterization, and Family Attribution of IoT Malware: A Comprehensive Longitudinal Study.”
+            <em>IEEE Transactions on Dependable and Secure Computing</em> (2024).
+          </li>
+        </ol>
+
+        <h3 class="sub">Conference Papers</h3>
+        <ol class="pub-list">
+          <li>
+            <strong>Đorđe Klisura</strong>, J. Khoury, A. Kundu, R. Krishnan, and A. Rios.
+            “Role-Conditioned Refusals: Evaluating Access Control Reasoning in Large Language Models.”
+            <em>Findings of the ACL: EACL 2026</em>, Mar. 2026.
+            <span class="badge">H5-index: 128</span>
+          </li>
+          <li>
+            <strong>Đorđe Klisura</strong>, A. Bernaga, A. K. Gárate, R. Roshan, K. Yang, H. Pataci, and A. Rios.
+            “A Multi-Agent Framework for Mitigating Dialect Biases in Privacy Policy Question-Answering Systems.”
+            <em>Proceedings of the 63rd Annual Meeting of the ACL (Vol. 1: Long Papers)</em>, 2025.
+            <span class="badge badge-star">A* Conference</span>
+            <span class="badge">Acc. rate 21%</span>
+            <span class="badge">H5-index: 236</span>
+          </li>
+          <li>
+            <strong>Đorđe Klisura</strong> and A. Rios.
+            “Unmasking Database Vulnerabilities: Zero-Knowledge Schema Inference Attacks in Text-to-SQL Systems.”
+            <em>Findings of the ACL: NAACL 2025</em>, Apr. 2025, pp. 6954–6976. ISBN 979-8-89176-195-7.
+            <span class="badge">H5-index: 126</span>
+          </li>
+          <li>
+            T. Richardson, <strong>Đorđe Klisura</strong>, H. Pataci, and A. Rios.
+            “FairPrivacy: A Robust Q&amp;A System for Enhancing Transparency in IoT.”
+            <em>AMCIS Proceedings</em> 48, 2025.
+          </li>
+          <li>
+            J. Khoury, <strong>Đorđe Klisura</strong>, H. Zanddizari, G. D. L. T. Parra, P. Najafirad, and E. Bou-Harb.
+            “Jbeil: Temporal Graph-Based Inductive Learning to Infer Lateral Movement in Evolving Enterprise Networks.”
+            <em>2024 IEEE Symposium on Security and Privacy (S&amp;P)</em>, 2024, pp. 3644–3660.
+            <span class="badge badge-star">A*</span>
+            <span class="badge">Acc. rate 12%</span>
+            <span class="badge">H5-index: 110</span>
+          </li>
+          <li>
+            V. Rammouz, J. Khoury, <strong>Đorđe Klisura</strong>, M. S. Pour, C. Fachkha, and E. Bou-Harb.
+            “Helium-based IoT Devices: Threat Analysis and Internet-scale Exploitations.”
+            <em>2023 19th Intl. Conf. on Wireless and Mobile Computing, Networking and Communications (WiMob)</em>, 2023, pp. 206–211.
+          </li>
+          <li>
+            M. Husák, J. Khoury, <strong>Đorđe Klisura</strong>, and E. Bou-Harb.
+            “On the Provision of Network-Wide Cyber Situational Awareness via Graph-Based Analytics.”
+            <em>Intl. Conf. on Complex Computational Ecosystems</em>, Springer, 2023, pp. 167–179.
+          </li>
+          <li>
+            M. Husák, S. J. Jang, J. Khoury, <strong>Đorđe Klisura</strong>, and E. Bou-Harb.
+            “Unraveling Network-based Pivoting Maneuvers: Empirical Insights and Challenges.”
+            <em>14th EAI Intl. Conf. on Digital Forensics &amp; Cyber Crime</em>, New York City, USA, Dec. 2023.
+          </li>
+          <li>
+            <strong>Đorđe Klisura</strong>.
+            “Embedding Non-Planar Graphs: Storage and Representation.”
+            <em>Proceedings of the 2021 7th Student Computer Science Research Conference</em>, 2021, p. 57.
+          </li>
+        </ol>
+
+        <h3 class="sub">Workshops</h3>
+        <ol class="pub-list">
+          <li>
+            R. Alvarez, P. Bhatt, <strong>Đorđe Klisura</strong>, and K. K. Choo.
+            “Predicting Game Cheating Behavior Through the Social Network.”
+            <em>Dewald Roode Workshop on Information Systems Security Research</em>, Vol. 8, 2023.
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============ PREPRINTS ============ -->
+      <section id="preprints" class="section">
+        <h2>Preprints &amp; Working Papers</h2>
+        <ol class="pub-list">
+          <li>
+            <strong>Đorđe Klisura</strong>, F. Džiho, P. Menard, A. Rios.
+            <em>Reducing Dialect-Induced Refusal Disparities in Large Language Models with Prompt-Probe-Gated Decoding.</em>
+            <span class="badge badge-soft">arXiv preprint</span>
+          </li>
+          <li>
+            V. Rammouz, <strong>Đorđe Klisura</strong>, A. Rios.
+            <em>Mechanistic Access Control in Large Language Models via Latent Refusal Probing.</em>
+            <span class="badge badge-soft">arXiv preprint</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="entry">
+            <div class="entry-head">
+              <h3>The University of Texas at San Antonio</h3>
+              <span class="meta">San Antonio, TX · Aug 2022 – May 2026</span>
+            </div>
+            <p class="entry-sub">Ph.D. in Information Technology <span class="dim">(Focus: Cybersecurity)</span></p>
+            <ul class="detail">
+              <li>GPA: 3.98 / 4.00</li>
+              <li>Chair: Dr. Anthony Rios</li>
+              <li>Committee: Dr. Philip Menard, Dr. Ram Krishnan, Dr. Nishant Vishwamitra</li>
+              <li>Thesis: <em>Enhancing Security and Fairness in Large Language Models for Sensitive and Regulated Applications</em></li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Louisiana State University</h3>
+              <span class="meta">Baton Rouge, LA · Aug 2023 – Dec 2023</span>
+            </div>
+            <p class="entry-sub">Visiting Ph.D. Coursework <span class="dim">(6 credit hours)</span></p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>University of Primorska, FAMNIT</h3>
+              <span class="meta">Koper, Slovenia · Oct 2020 – Aug 2022</span>
+            </div>
+            <p class="entry-sub">M.Sc. in Data Science</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>University of Turku</h3>
+              <span class="meta">Turku, Finland · Jan 2022 – Jul 2022</span>
+            </div>
+            <p class="entry-sub">M.Sc. Thesis Research <span class="dim">(Advisor: Dr. Leo Lahti)</span></p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>University of Coimbra</h3>
+              <span class="meta">Coimbra, Portugal · Feb 2021 – Jun 2021</span>
+            </div>
+            <p class="entry-sub">Erasmus+ Exchange Program</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>University of Primorska, FAMNIT</h3>
+              <span class="meta">Koper, Slovenia · Oct 2017 – Sep 2020</span>
+            </div>
+            <p class="entry-sub">B.Sc. in Computer Science</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ APPOINTMENTS ============ -->
+      <section id="appointments" class="section">
+        <h2>Appointments</h2>
+        <div class="timeline">
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Assistant Professor of Information Systems and Security <span class="pill">Tenure-Track</span></h3>
+              <span class="meta">Kennesaw, GA · Aug 2026 – Present</span>
+            </div>
+            <p class="entry-sub">Kennesaw State University — Coles College of Business</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Data Science for Social Good (DSSG) Fellow</h3>
+              <span class="meta">Baltimore, MD · May – Jul 2026</span>
+            </div>
+            <p class="entry-sub">The Johns Hopkins University</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Graduate Research Assistant</h3>
+              <span class="meta">San Antonio, TX · Aug 2022 – May 2026</span>
+            </div>
+            <p class="entry-sub">UT San Antonio — ISC Department</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Visiting Research Assistant</h3>
+              <span class="meta">Baton Rouge, LA · Aug 2023 – Dec 2023</span>
+            </div>
+            <p class="entry-sub">LSU — Division of Computer Science and Engineering (CSE)</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Cybersecurity Simulation Designer <span class="pill">NATO 2023</span></h3>
+              <span class="meta">Remote · May 2023 – Nov 2023</span>
+            </div>
+            <p class="entry-sub">NATO Allied Command Transformation <span class="dim">(Letter of Commendation)</span></p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Applied ML Research Intern</h3>
+              <span class="meta">Turku, Finland · Feb 2022 – Jul 2022</span>
+            </div>
+            <p class="entry-sub">UTU — Department of Computing <span class="dim">(Internship Report)</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ AWARDS ============ -->
+      <section id="awards" class="section">
+        <h2>Awards &amp; Honors</h2>
+        <ul class="award-list">
+          <li>
+            <div class="award-main">
+              <strong>Outstanding Graduate Teaching Award</strong> — College of AI, Cyber and Computing
+              <span class="award-desc">Named the top graduate instructor at UT San Antonio CAICC.</span>
+            </div>
+            <span class="meta">Apr 2026</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Ph.D. Student of The Year</strong> — UT San Antonio Alvarez College of Business
+              <span class="award-desc">Awarded to the top doctoral student across all Ph.D. programs.</span>
+            </div>
+            <span class="meta">Jul 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Ph.D. Student of The Year</strong> — Information Systems &amp; Cybersecurity Dept.
+              <span class="award-desc">Awarded to the top doctoral student in the ISC Department.</span>
+            </div>
+            <span class="meta">Jul 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Second Place</strong> — STEM Spark: INFORMS K-12 Poster Competition
+              <span class="award-desc">Competition sponsored by the INFORMS Education Outreach Committee.</span>
+            </div>
+            <span class="meta">Oct 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>First Place, Best Poster Award</strong>
+              <span class="award-desc">National Student Data Corps — 2024 Data Science Symposium.</span>
+            </div>
+            <span class="meta">Sep 2024</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ TEACHING ============ -->
+      <section id="teaching" class="section">
+        <h2>Teaching &amp; Mentorship</h2>
+        <div class="timeline">
+          <div class="entry">
+            <div class="entry-head">
+              <h3>CYBR 4330: Incident Response and Contingency Planning</h3>
+              <span class="meta">Fall 2026</span>
+            </div>
+            <p class="entry-sub">Instructor — Kennesaw State University</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>IS 7330: Disaster Recovery &amp; Business Continuity Planning</h3>
+              <span class="meta">Fall 2026</span>
+            </div>
+            <p class="entry-sub">Instructor — Kennesaw State University</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>IS-2053 Programming I</h3>
+              <span class="meta">Fall 2025</span>
+            </div>
+            <p class="entry-sub">Primary Instructor — UT San Antonio</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>IS-2053 Programming I</h3>
+              <span class="meta">Spring 2025</span>
+            </div>
+            <p class="entry-sub">Primary Instructor — UT San Antonio</p>
+            <ul class="detail">
+              <li>Overall Instructor Rating: <strong>4.66 / 5.0</strong></li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>LSU University Laboratory School</h3>
+              <span class="meta">Fall 2023</span>
+            </div>
+            <p class="entry-sub">Curriculum development and teaching for high school students</p>
+            <ul class="detail">
+              <li>Co-developed and taught hands-on cybersecurity modules to high school students as part of the experiential CSC 7700 course at LSU.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>UT San Antonio School of Data Science</h3>
+              <span class="meta">Summer 2024</span>
+            </div>
+            <p class="entry-sub">Immersion Program — Graduate Student Mentor</p>
+            <ul class="detail">
+              <li>Mentored graduate student Astrid Bernaga (Tecnológico de Monterrey) on a two-month research project, culminating in a poster presentation and an ACL publication.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRESENTATIONS ============ -->
+      <section id="presentations" class="section">
+        <h2>Research Presentations</h2>
+        <ul class="award-list">
+          <li>
+            <div class="award-main">
+              <strong>Texas NLP Symposium 2026</strong>
+              <span class="award-desc">Poster Presentation · College Station, TX</span>
+            </div>
+            <span class="meta">Apr 2, 2026</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Fall Workshop on Cybersecurity and AI</strong>
+              <span class="award-desc">Poster Presentation · San Angelo, TX</span>
+            </div>
+            <span class="meta">Oct 7–8, 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>ACL 2025</strong>
+              <span class="award-desc">Poster Presentation · Vienna, Austria</span>
+            </div>
+            <span class="meta">Jul 27 – Aug 1, 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>NAACL 2025</strong>
+              <span class="award-desc">Poster Presentation · Albuquerque, NM</span>
+            </div>
+            <span class="meta">Apr 29 – May 3, 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Alamo Regional Data Alliance SPARK Conference</strong>
+              <span class="award-desc">Oral Presentation — “Emerging Voices: Data Ethics at the Human-AI Intersection” · San Antonio, TX</span>
+            </div>
+            <span class="meta">Apr 17, 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Biz AI: AI Applications in Business Research</strong>
+              <span class="award-desc">Poster Presentation · Dallas, TX</span>
+            </div>
+            <span class="meta">Mar 28–30, 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>15th Annual Machine Learning Symposium</strong>
+              <span class="award-desc">Poster Presentation · New York City, NY</span>
+            </div>
+            <span class="meta">Oct 18, 2024</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ SERVICE ============ -->
+      <section id="service" class="section">
+        <h2>Professional Service</h2>
+        <div class="two-col">
+          <div class="card">
+            <h3 class="card-title">Reviewer</h3>
+            <ul class="plain">
+              <li>The International Conference on Information Systems (ICIS) — 2026</li>
+              <li>IEEE Transactions on Network and Service Management (TNSM) — 2026, 2025, 2024, 2023</li>
+              <li>Empirical Methods in Natural Language Processing (EMNLP) — 2025</li>
+              <li>Association for Computational Linguistics (ACL) — 2025</li>
+              <li>IEEE Transactions on Dependable and Secure Computing (TDSC) — 2025</li>
+              <li>IEEE Access — 2024</li>
+              <li>IEEE Internet of Things Magazine — 2023, 2022</li>
+              <li>IEEE Wireless Communications and Networking Conference (WCNC) — 2023</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Sub-Reviewer &amp; Committees</h3>
+            <ul class="plain">
+              <li><strong>Sub-Reviewer:</strong> EMNLP 2024; ACL Rolling Review 2024; ARES 2024, 2023</li>
+              <li><strong>Program Committee Member:</strong> ARES — 4th Intl. Workshop on Graph-based Approaches for CyberSecurity (GRASEC), 2023</li>
+            </ul>
+            <h3 class="card-title" style="margin-top:1.25rem">Volunteering</h3>
+            <ul class="plain">
+              <li>Volunteer Coordinator, ACL 2025 — Jul 2025</li>
+              <li>Session Coordinator, MISQ AI-IA Workshop (WaIIaNE) — Jul 2025</li>
+              <li>Volunteer Coordinator, NAACL 2025 — May 2025</li>
+              <li>Graduate Student Volunteer, Northeast Big Data Innovation Hub — Jun 2023 – Sep 2024</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GRANTS ============ -->
+      <section id="grants" class="section">
+        <h2>Grants &amp; Scholarships</h2>
+        <ul class="award-list">
+          <li>
+            <div class="award-main">
+              <strong>UT San Antonio Travel Grants &amp; Research Support</strong>
+              <span class="award-desc">PhD Excellence Fund (4×), Grad. Prof. Dev. Grant (3×), IEF Scholarship · San Antonio, TX</span>
+            </div>
+            <span class="meta">2024–2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>DAIR³ Scholarship</strong>
+              <span class="award-desc">MIDAS, University of Michigan · Ann Arbor, MI</span>
+            </div>
+            <span class="meta">Jul 2024</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Travel Grant</strong>
+              <span class="award-desc">UC Berkeley Summer Institute · Berkeley, CA</span>
+            </div>
+            <span class="meta">Jun 2024</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Research Grant</strong>
+              <span class="award-desc">UTU Department of Computing · Turku, Finland</span>
+            </div>
+            <span class="meta">Mar 2022</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>The Three ERASMUS+ Scholarships</strong>
+              <span class="award-desc">EU-funded mobility programs (study, research, internship) · Finland, Austria, Portugal</span>
+            </div>
+            <span class="meta">2021–2022</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Academic Excellence Scholarship</strong>
+              <span class="award-desc">University of Primorska · Koper, Slovenia</span>
+            </div>
+            <span class="meta">Oct 2021 – Aug 2022</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>NLB Bank Scholarship</strong>
+              <span class="award-desc">NLB Group (national competition) · Ljubljana, Slovenia</span>
+            </div>
+            <span class="meta">Mar – Sep 2022</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ PROFESSIONAL DEVELOPMENT ============ -->
+      <section id="development" class="section">
+        <h2>Professional Development</h2>
+        <div class="timeline">
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Exploring Business and Culture in an Emerging Economy</h3>
+              <span class="meta">Mysore, India · Aug 1–10, 2025</span>
+            </div>
+            <p class="entry-sub">UT San Antonio Study Abroad Program <span class="dim">(3 credit hours)</span></p>
+            <ul class="detail">
+              <li>Completed the UTSA-led International Summer Immersion Program in Mysore, Karnataka — seminars and workshops on AI in cybersecurity, fintech, entrepreneurship, CSR, creative industries, and transportation, with cultural activities and industry tours.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Data and AI Intensive Research with Rigor and Reproducibility (DAIR³)</h3>
+              <span class="meta">Jackson, MS · Jul 28 – Aug 2, 2024</span>
+            </div>
+            <p class="entry-sub">Participant — Full Scholarship Award</p>
+            <ul class="detail">
+              <li>Competitive bootcamp and year-long mentorship by the Michigan Institute for Data Science (MIDAS), focused on ethical data practices, reproducible workflows, and rigorous analytical design. Under the mentorship of Dr. Gregory Hunt (William &amp; Mary), developed and piloted a DAIR³ implementation plan in the IS-2053 Python course at UTSA (Spring 2025).</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Berkeley-Stanford Workshop on Vertical Data Science</h3>
+              <span class="meta">Berkeley, CA · May 31, 2024</span>
+            </div>
+            <p class="entry-sub">Attendee</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>MIDAS Annual Future Leaders Summit 2024</h3>
+              <span class="meta">Ann Arbor, MI · Apr 8–10, 2024</span>
+            </div>
+            <p class="entry-sub">Poster Presentation</p>
+            <ul class="detail">
+              <li>Selected by the ISCS Department to present research on database system security and contribute to discussions on responsible and explainable AI.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Weatherhead Symposium 2025: AI and the Future of Work</h3>
+              <span class="meta">Cleveland, OH · Apr 24, 2025</span>
+            </div>
+            <p class="entry-sub">Attendee</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CREDENTIALS ============ -->
+      <section id="credentials" class="section">
+        <h2>Credentials</h2>
+        <ul class="award-list">
+          <li>
+            <div class="award-main">
+              <strong>Data and AI Intensive Research (DAIR³)</strong>
+              <span class="award-desc">Michigan Institute for Data Science</span>
+            </div>
+            <span class="meta">May 2025</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>PH525.3x: Statistical Inference and Modeling for High-throughput Experiments</strong>
+              <span class="award-desc">Harvard University</span>
+            </div>
+            <span class="meta">Feb 2023</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>SAS Certified Associate: Programming Fundamentals using SAS 9.4</strong>
+              <span class="award-desc">SAS Institute</span>
+            </div>
+            <span class="meta">Dec 2022</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Machine Learning Onramp</strong>
+              <span class="award-desc">MathWorks</span>
+            </div>
+            <span class="meta">Mar 2021</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Faculty Development Programme on Cyber Security and Cryptography</strong>
+              <span class="award-desc">Indian Institute of Technology Roorkee</span>
+            </div>
+            <span class="meta">Oct 2020</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3>Programming (Advanced)</h3>
+            <p>Python <span class="dim">(pandas, NumPy, PyTorch, TensorFlow, PyTorch-Lightning)</span>, R / RStudio, Java / JavaScript</p>
+          </div>
+          <div class="skill-block">
+            <h3>Programming (Working)</h3>
+            <p>MATLAB, SAS, Stata, PHP, HTML / CSS</p>
+          </div>
+          <div class="skill-block">
+            <h3>Machine Learning &amp; NLP</h3>
+            <p>scikit-learn, Hugging Face Transformers, spaCy, NLTK, LangChain, OpenAI / Llama / other Gen-AI models</p>
+          </div>
+          <div class="skill-block">
+            <h3>Data &amp; Databases</h3>
+            <p>PostgreSQL, MySQL, SQL (ETL design), Power BI, MicroStrategy, QGIS, HiView</p>
+          </div>
+          <div class="skill-block">
+            <h3>DevOps &amp; Reproducibility</h3>
+            <p>Git / GitHub, Docker, VS Code / Jupyter, LaTeX / biblatex, CI workflows</p>
+          </div>
+          <div class="skill-block">
+            <h3>Languages</h3>
+            <p>Serbian (Native), English (Fluent), Slovenian (Fluent), Spanish (Basic)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section">
+        <h2>Industry &amp; Applied Experience</h2>
+        <div class="timeline">
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Software Developer</h3>
+              <span class="meta">Koper, Slovenia · Nov 2021 – Feb 2022</span>
+            </div>
+            <p class="entry-sub">Actual I.T.</p>
+            <ul class="detail">
+              <li>Shipped user-facing features in Vue/Java; implemented input validation and partnered with designers on UX refinements.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Data Analyst Trainee</h3>
+              <span class="meta">Vienna, Austria · Jul 2021 – Sep 2021</span>
+            </div>
+            <p class="entry-sub">ClearKarma</p>
+            <ul class="detail">
+              <li>Ran market analyses and automated data-extraction workflows; defined data standards now embedded in the core platform.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Data Science Intern</h3>
+              <span class="meta">Ljubljana, Slovenia · Feb 2021</span>
+            </div>
+            <p class="entry-sub">CRMT d.o.o.</p>
+            <ul class="detail">
+              <li>Designed data-warehouse schema and ETL pipelines; transformed enterprise data with SQL for BI dashboards.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Web Developer (Project)</h3>
+              <span class="meta">Koper, Slovenia · Jun 2020</span>
+            </div>
+            <p class="entry-sub">University of Primorska, Faculty of Pedagogy</p>
+            <ul class="detail">
+              <li>Built the departmental website end-to-end, iterating with faculty to improve accessibility and UX.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MEMBERSHIPS ============ -->
+      <section id="memberships" class="section">
+        <h2>Memberships in Professional Societies</h2>
+        <ul class="award-list">
+          <li>
+            <div class="award-main">
+              <strong>Association for Computational Linguistics (ACL)</strong>
+              <span class="award-desc">Student Member</span>
+            </div>
+            <span class="meta">Jun 2025 – Present</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Order of the Sword &amp; Shield (Omicron Sigma Sigma)</strong>
+              <span class="award-desc">Student Member — National Honor Society for homeland security, intelligence, emergency management, and protective security.</span>
+            </div>
+            <span class="meta">Nov 2024 – Present</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Institute of Electrical and Electronics Engineers (IEEE)</strong>
+              <span class="award-desc">Graduate Student Member — Lone Star Section</span>
+            </div>
+            <span class="meta">Jul 2024 – Present</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>New York Academy of Sciences</strong>
+              <span class="award-desc">Student Member</span>
+            </div>
+            <span class="meta">Oct 2024 – Present</span>
+          </li>
+          <li>
+            <div class="award-main">
+              <strong>Google Developer Student Clubs</strong>
+              <span class="award-desc">Student Member</span>
+            </div>
+            <span class="meta">Nov 2021 – Jun 2022</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="page-foot">
+        <p>© <span id="year">2026</span> Đorđe Klisura · Assistant Professor of Information Systems &amp; Security</p>
+        <p class="dim">Built as a static site for GitHub Pages.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.3 5.7 14.6a1 1 0 0 0 1.4 1.4L12 11.1l4.9 4.9a1 1 0 0 0 1.4-1.4L12 8.3Z"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
