@@ -142,13 +142,17 @@ a:hover { text-decoration: underline; }
 /* download CV button */
 .cv-btn {
   display: flex; align-items: center; justify-content: center; gap: .5rem;
-  margin: .2rem 0 .4rem; padding: .6rem 1rem;
-  background: var(--accent); color: #fff;
-  border-radius: 9px; font-size: .88rem; font-weight: 600;
-  box-shadow: var(--shadow); transition: background .15s, transform .15s;
+  margin: .2rem 0 .4rem; padding: .55rem 1rem;
+  background: var(--surface-2); color: var(--accent);
+  border: 1px solid var(--border); border-radius: 9px;
+  font-size: .86rem; font-weight: 600;
+  transition: background .15s, border-color .15s, color .15s;
 }
-.cv-btn:hover { background: var(--accent-2); text-decoration: none; transform: translateY(-1px); }
-.cv-btn svg { width: 16px; height: 16px; fill: currentColor; }
+.cv-btn:hover {
+  background: var(--accent-soft); border-color: var(--accent); color: var(--accent-2);
+  text-decoration: none;
+}
+.cv-btn svg { width: 15px; height: 15px; fill: currentColor; opacity: .85; }
 
 /* nav */
 .site-nav { display: flex; flex-direction: column; gap: .05rem; margin-top: .4rem; padding-top: 1rem; border-top: 1px solid var(--border); }
