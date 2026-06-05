@@ -54,6 +54,17 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* dark-mode textured background (trial) */
+[data-theme="dark"] body {
+  background-image:
+    linear-gradient(rgba(14,17,23,.74), rgba(14,17,23,.82)),
+    url("../../picture/pexels-resourceboy-18541807.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .skip-link {
   position: absolute; left: -999px; top: 0;
   background: var(--accent); color: #fff; padding: .6rem 1rem; z-index: 100;
