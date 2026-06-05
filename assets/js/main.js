@@ -9,8 +9,8 @@
   var root = document.documentElement;
   var stored = null;
   try { stored = localStorage.getItem("theme"); } catch (e) {}
-  var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  var theme = stored || (prefersDark ? "dark" : "light");
+  // Default to dark mode on first visit; remember the visitor's choice afterward.
+  var theme = stored || "dark";
   root.setAttribute("data-theme", theme);
 
   var themeBtn = document.getElementById("themeToggle");

@@ -7,6 +7,17 @@
   <meta name="description" content="Đorđe Klisura — Assistant Professor of Information Systems and Security. Research in Trustworthy AI, permission-aware language models, and AI-driven cybersecurity." />
   <meta name="author" content="Đorđe Klisura" />
 
+  <!-- Set theme before paint (default dark) to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "dark");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
   <!-- Open Graph / social share -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://klisura-code.github.io/" />
