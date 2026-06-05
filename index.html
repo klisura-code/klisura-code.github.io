@@ -20,6 +20,43 @@
   <meta name="twitter:description" content="Research in Trustworthy AI, permission-aware language models, and AI-driven cybersecurity." />
   <meta name="twitter:image" content="https://klisura-code.github.io/assets/img/og-cover.png" />
 
+  <!-- Structured data (schema.org Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Đorđe Klisura",
+    "givenName": "Đorđe",
+    "familyName": "Klisura",
+    "jobTitle": "Assistant Professor of Information Systems and Security",
+    "email": "mailto:dklisura@kennesaw.edu",
+    "url": "https://klisura-code.github.io/",
+    "image": "https://klisura-code.github.io/picture/profile_photo.jpg",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Kennesaw State University",
+      "department": "Coles College of Business"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at San Antonio" },
+      { "@type": "CollegeOrUniversity", "name": "University of Primorska" }
+    ],
+    "knowsAbout": [
+      "Trustworthy AI",
+      "Natural Language Processing",
+      "Large Language Models",
+      "Access Control",
+      "Cybersecurity",
+      "Machine Learning Fairness"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=jpv8YdQAAAAJ&hl=en",
+      "https://github.com/klisura-code",
+      "https://www.linkedin.com/in/djordje-klisura/"
+    ]
+  }
+  </script>
+
   <!-- Favicon: ĐK monogram -->
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjMmY2ZjZiIi8+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXNpemU9IjQ2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPsSQSzwvdGV4dD48L3N2Zz4=" />
 
@@ -84,7 +121,13 @@
           </li>
         </ul>
 
+        <a class="cv-btn" href="Curriculum_Vitae.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+          Download CV
+        </a>
+
         <nav class="site-nav" aria-label="Sections">
+          <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#preprints">Preprints</a>
           <a href="#education">Education</a>
@@ -111,20 +154,83 @@
     <main class="content" id="main">
 
       <section id="about" class="section">
+        <div class="about-grid">
+        <div class="about-bio">
         <h2>About Me</h2>
         <p class="lede">
           Welcome! I am an incoming Assistant Professor of Information Systems and Security
           at Kennesaw State University,
           <a href="https://campus.kennesaw.edu/colleges-departments/coles/academics/information-systems-security/index.php" target="_blank" rel="noopener">Coles College of Business</a>.
           I completed my Ph.D. in Information Technology with a focus on cybersecurity at the
-          University of Texas at San Antonio, advised by Dr. Anthony Rios. My research builds
-          trustworthy AI—language models that reason about permissions and access control,
-          resist privacy attacks, and behave fairly across dialects and populations.
+          University of Texas at San Antonio, advised by Dr. Anthony Rios.
         </p>
+        </div>
+        <aside class="about-news">
+        <h3 class="news-heading">News</h3>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">Aug 2026</span>
+            <span class="news-text">Joining <strong>Kennesaw State University</strong> as Assistant Professor of Information Systems &amp; Security.</span>
+          </li>
+          <li>
+            <span class="news-date">May 2026</span>
+            <span class="news-text">Beginning a <strong>Data Science for Social Good (DSSG)</strong> Fellowship at Johns Hopkins University.</span>
+          </li>
+          <li>
+            <span class="news-date">Apr 2026</span>
+            <span class="news-text">Received the <strong>Outstanding Graduate Teaching Award</strong> from the UTSA College of AI, Cyber and Computing.</span>
+          </li>
+          <li>
+            <span class="news-date">Mar 2026</span>
+            <span class="news-text">“Role-Conditioned Refusals” accepted to <strong>Findings of the ACL: EACL 2026</strong>.</span>
+          </li>
+          <li>
+            <span class="news-date">Jul 2025</span>
+            <span class="news-text">Named <strong>Ph.D. Student of the Year</strong>, UTSA Alvarez College of Business.</span>
+          </li>
+          <li>
+            <span class="news-date">May 2025</span>
+            <span class="news-text">“A Multi-Agent Framework for Mitigating Dialect Biases” accepted to <strong>ACL 2025</strong> (A&#42;).</span>
+          </li>
+        </ul>
+        </aside>
+        </div>
       </section>
 
       <section id="research" class="section">
-        <h2>Research Interests</h2>
+        <h2>Research</h2>
+        <p class="section-intro">
+          I build <em>trustworthy AI</em> for sensitive and regulated settings—language models
+          that respect permissions, treat users fairly, and strengthen security. My work spans
+          three connected threads:
+        </p>
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Permission-Aware Language Models</h3>
+            <p>
+              Teaching LLMs to reason about <strong>access control</strong>—who is allowed to know
+              or do what. Models should refuse or comply based on a requester's role and permissions,
+              not just the surface content of a prompt.
+            </p>
+            <p class="research-papers">Role-Conditioned Refusals · Mechanistic Access Control via Latent Refusal Probing</p>
+          </article>
+          <article class="research-card">
+            <h3>Fairness &amp; Dialect Robustness</h3>
+            <p>
+              Ensuring language systems treat people <strong>equitably across dialects and populations</strong>.
+              Privacy and safety tools should work as well for non-standard dialects as for "standard" English.
+            </p>
+            <p class="research-papers">Multi-Agent Dialect-Bias Mitigation · Prompt-Probe-Gated Decoding · FairPrivacy</p>
+          </article>
+          <article class="research-card">
+            <h3>AI-Driven Cybersecurity</h3>
+            <p>
+              Graph- and ML-based methods that <strong>detect threats and harden systems</strong>—inferring
+              lateral movement, attributing malware at internet scale, and surfacing database vulnerabilities.
+            </p>
+            <p class="research-papers">Jbeil (IEEE S&amp;P) · IoT Malware Attribution (TDSC) · Text-to-SQL Schema Inference</p>
+          </article>
+        </div>
         <div class="tags">
           <span class="tag">Natural Language Processing</span>
           <span class="tag">Trustworthy AI</span>
@@ -144,11 +250,13 @@
             I. Kuukkanen, G. Muluh, <strong>Đorđe Klisura</strong>, E. Kortela, A. Pietikäinen, L. Lahti, J. Hytönen, and M. Karonen.
             “Application of Mass Spectrometry-Based Metabolomics and Machine Learning in the Diagnostics of Lyme Neuroborreliosis.”
             <em>ACS Omega</em> (2026).
+            <div class="pub-actions"><button class="cite-btn" data-cite="kuukkanen2026lyme">Cite</button></div>
           </li>
           <li>
             S. Torabi, <strong>Đorđe Klisura</strong>, J. Khoury, E. Bou-Harb, C. Assi, and M. Debbabi.
             “Internet-Wide Analysis, Characterization, and Family Attribution of IoT Malware: A Comprehensive Longitudinal Study.”
             <em>IEEE Transactions on Dependable and Secure Computing</em> (2024).
+            <div class="pub-actions"><button class="cite-btn" data-cite="torabi2024iot">Cite</button></div>
           </li>
         </ol>
 
@@ -159,6 +267,7 @@
             “Role-Conditioned Refusals: Evaluating Access Control Reasoning in Large Language Models.”
             <em>Findings of the ACL: EACL 2026</em>, Mar. 2026.
             <span class="badge">H5-index: 128</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="klisura2026roleconditioned">Cite</button></div>
           </li>
           <li>
             <strong>Đorđe Klisura</strong>, A. Bernaga, A. K. Gárate, R. Roshan, K. Yang, H. Pataci, and A. Rios.
@@ -167,17 +276,20 @@
             <span class="badge badge-star">A*</span>
             <span class="badge">Acc. rate 21%</span>
             <span class="badge">H5-index: 236</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="klisura2025multiagent">Cite</button></div>
           </li>
           <li>
             <strong>Đorđe Klisura</strong> and A. Rios.
             “Unmasking Database Vulnerabilities: Zero-Knowledge Schema Inference Attacks in Text-to-SQL Systems.”
             <em>Findings of the ACL: NAACL 2025</em>, Apr. 2025, pp. 6954–6976. ISBN 979-8-89176-195-7.
             <span class="badge">H5-index: 126</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="klisura2025textsql">Cite</button></div>
           </li>
           <li>
             T. Richardson, <strong>Đorđe Klisura</strong>, H. Pataci, and A. Rios.
             “FairPrivacy: A Robust Q&amp;A System for Enhancing Transparency in IoT.”
             <em>AMCIS Proceedings</em> 48, 2025.
+            <div class="pub-actions"><button class="cite-btn" data-cite="richardson2025fairprivacy">Cite</button></div>
           </li>
           <li>
             J. Khoury, <strong>Đorđe Klisura</strong>, H. Zanddizari, G. D. L. T. Parra, P. Najafirad, and E. Bou-Harb.
@@ -186,26 +298,31 @@
             <span class="badge badge-star">A*</span>
             <span class="badge">Acc. rate 12%</span>
             <span class="badge">H5-index: 110</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="khoury2024jbeil">Cite</button></div>
           </li>
           <li>
             V. Rammouz, J. Khoury, <strong>Đorđe Klisura</strong>, M. S. Pour, C. Fachkha, and E. Bou-Harb.
             “Helium-based IoT Devices: Threat Analysis and Internet-scale Exploitations.”
             <em>2023 19th Intl. Conf. on Wireless and Mobile Computing, Networking and Communications (WiMob)</em>, 2023, pp. 206–211.
+            <div class="pub-actions"><button class="cite-btn" data-cite="rammouz2023helium">Cite</button></div>
           </li>
           <li>
             M. Husák, J. Khoury, <strong>Đorđe Klisura</strong>, and E. Bou-Harb.
             “On the Provision of Network-Wide Cyber Situational Awareness via Graph-Based Analytics.”
             <em>Intl. Conf. on Complex Computational Ecosystems</em>, Springer, 2023, pp. 167–179.
+            <div class="pub-actions"><button class="cite-btn" data-cite="husak2023situational">Cite</button></div>
           </li>
           <li>
             M. Husák, S. J. Jang, J. Khoury, <strong>Đorđe Klisura</strong>, and E. Bou-Harb.
             “Unraveling Network-based Pivoting Maneuvers: Empirical Insights and Challenges.”
             <em>14th EAI Intl. Conf. on Digital Forensics &amp; Cyber Crime</em>, New York City, USA, Dec. 2023.
+            <div class="pub-actions"><button class="cite-btn" data-cite="husak2023pivoting">Cite</button></div>
           </li>
           <li>
             <strong>Đorđe Klisura</strong>.
             “Embedding Non-Planar Graphs: Storage and Representation.”
             <em>Proceedings of the 2021 7th Student Computer Science Research Conference</em>, 2021, p. 57.
+            <div class="pub-actions"><button class="cite-btn" data-cite="klisura2021embedding">Cite</button></div>
           </li>
         </ol>
 
@@ -215,6 +332,7 @@
             R. Alvarez, P. Bhatt, <strong>Đorđe Klisura</strong>, and K. K. Choo.
             “Predicting Game Cheating Behavior Through the Social Network.”
             <em>Dewald Roode Workshop on Information Systems Security Research</em>, Vol. 8, 2023.
+            <div class="pub-actions"><button class="cite-btn" data-cite="alvarez2023gamecheating">Cite</button></div>
           </li>
         </ol>
       </section>
@@ -227,11 +345,13 @@
             <strong>Đorđe Klisura</strong>, F. Džiho, P. Menard, A. Rios.
             <em>Reducing Dialect-Induced Refusal Disparities in Large Language Models with Prompt-Probe-Gated Decoding.</em>
             <span class="badge badge-soft">arXiv preprint</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="klisura2026dialect">Cite</button></div>
           </li>
           <li>
             V. Rammouz, <strong>Đorđe Klisura</strong>, A. Rios.
             <em>Mechanistic Access Control in Large Language Models via Latent Refusal Probing.</em>
             <span class="badge badge-soft">arXiv preprint</span>
+            <div class="pub-actions"><button class="cite-btn" data-cite="rammouz2026mechanistic">Cite</button></div>
           </li>
         </ol>
       </section>
@@ -624,5 +744,6 @@
   </button>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/cite.js"></script>
 </body>
 </html>
