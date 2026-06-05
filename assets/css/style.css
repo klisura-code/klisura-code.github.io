@@ -449,6 +449,9 @@ a:hover { text-decoration: underline; }
 .entry .meta { font-size: .82rem; color: var(--text-dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .entry-sub { margin: .15rem 0 0; color: var(--text-soft); font-style: italic; font-size: .92rem; }
 
+/* Professional Development: place date/location below the event title */
+#development .entry-head { flex-direction: column; align-items: flex-start; gap: .12rem; }
+
 /* inline external link (e.g. program / institution site) */
 .ext-link {
   font-style: normal; font-weight: 600; font-size: .82rem;
