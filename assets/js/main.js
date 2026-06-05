@@ -93,15 +93,25 @@
     revealEls.forEach(function (el) { revObs.observe(el); });
   }
 
-  /* ---------- Back to top ---------- */
+  /* ---------- Back to top + scroll progress ---------- */
   var toTop = document.getElementById("toTop");
-  if (toTop) {
-    var onScroll = function () {
-      if (window.scrollY > 500) toTop.classList.add("show");
+  var progress = document.getElementById("progress");
+  var onScroll = function () {
+    var doc = document.documentElement;
+    var scrolled = window.scrollY || doc.scrollTop;
+    if (toTop) {
+      if (scrolled > 500) toTop.classList.add("show");
       else toTop.classList.remove("show");
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    }
+    if (progress) {
+      var max = doc.scrollHeight - doc.clientHeight;
+      progress.style.width = (max > 0 ? (scrolled / max) * 100 : 0) + "%";
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  onScroll();
+  if (toTop) {
     toTop.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
     });
