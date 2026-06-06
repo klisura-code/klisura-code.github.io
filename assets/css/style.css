@@ -707,13 +707,13 @@ a:hover { text-decoration: underline; }
     font-family: "Newsreader", Georgia, serif;
     font-weight: 600; font-size: 1.2rem; letter-spacing: .2px; color: var(--text);
   }
-  .nav-toggle { display: flex; top: 6px; right: 10px; width: 44px; height: 44px; }
+  .nav-toggle { display: flex; top: 6px; right: 10px; width: 44px; height: 44px; z-index: 65; }
   .layout { flex-direction: column; }
   .sidebar {
     position: fixed; top: 0; left: 0; bottom: 0;
     width: 88%; max-width: 320px; height: 100vh; height: 100dvh; flex: none;
     transform: translateX(-100%); transition: transform .28s ease;
-    z-index: 50; box-shadow: var(--shadow);
+    z-index: 62; box-shadow: var(--shadow);
   }
   .sidebar.open { transform: translateX(0); }
   .content { max-width: 100%; padding: 4.5rem 1.4rem 3rem; width: 100%; }
@@ -722,7 +722,7 @@ a:hover { text-decoration: underline; }
   .contacts a { padding: .55rem .55rem; }
   .backdrop {
     position: fixed; inset: 0; background: rgba(0,0,0,.4);
-    opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 40;
+    opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 58;
   }
   .backdrop.show { opacity: 1; pointer-events: auto; }
 }
