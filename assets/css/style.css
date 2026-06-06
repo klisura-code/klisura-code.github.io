@@ -54,14 +54,14 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* dark-mode textured background (trial) */
-[data-theme="dark"] body {
+/* dark-mode textured background (fixed layer — reliable on iOS/mobile) */
+[data-theme="dark"] body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background-image:
     linear-gradient(rgba(14,17,23,.74), rgba(14,17,23,.82)),
     url("../../picture/pexels-resourceboy-18541807.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -760,6 +760,7 @@ a:hover { text-decoration: underline; }
 @media print {
   :root { --bg: #fff; --surface: #fff; --surface-2: #fff; --border: #ccc; }
   body { font-size: 10.5pt; color: #000; }
+  [data-theme="dark"] body::before { display: none !important; }
   .sidebar { position: static; width: 100%; height: auto; border: none; overflow: visible; }
   .sidebar-inner { padding: 0 0 1rem; }
   .site-nav, .sidebar-foot, .nav-toggle, .to-top, .backdrop, .skip-link,
