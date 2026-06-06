@@ -544,6 +544,21 @@ a:hover { text-decoration: underline; }
 .plain strong { color: var(--text); }
 
 /* ============================================================
+   Contact
+   ============================================================ */
+.contact-list { list-style: none; margin: 1.3rem 0 0; padding: 0; }
+.contact-list li {
+  display: grid; grid-template-columns: 96px 1fr; gap: 1rem; align-items: baseline;
+  padding: .65rem 0; border-bottom: 1px solid var(--border);
+}
+.contact-list li:last-child { border-bottom: none; }
+.contact-key {
+  font-size: .74rem; text-transform: uppercase; letter-spacing: .7px;
+  color: var(--accent); font-weight: 700;
+}
+.contact-links { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+
+/* ============================================================
    Skills grid
    ============================================================ */
 .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
