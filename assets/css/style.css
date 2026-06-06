@@ -320,6 +320,7 @@ a:hover { text-decoration: underline; }
 
 /* tags */
 .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: .4rem; }
+@media (max-width: 600px) { .tags { justify-content: flex-start; } }
 .tag {
   background: var(--accent-soft); color: var(--accent-2);
   padding: .45rem .9rem; border-radius: 999px;
