@@ -737,8 +737,12 @@ a:hover { text-decoration: underline; }
   .backdrop.show { opacity: 1; pointer-events: auto; }
 }
 
+@media (max-width: 600px) {
+  /* stack course title and term so the date is always below the title */
+  .entry-head { flex-direction: column; align-items: flex-start; gap: .1rem; }
+}
+
 @media (max-width: 520px) {
-  .entry-head { gap: .2rem; }
   /* comfortable tap targets for Cite buttons */
   .cite-btn, .pub-link { padding: .35rem .8rem; font-size: .8rem; }
   /* give the news feed a touch more room when stacked full-width */
